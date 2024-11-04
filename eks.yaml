@@ -1,10 +1,12 @@
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 metadata:
-  name: expense-1
+  name: expense
   region: us-east-1
 managedNodeGroups:  #this managedNodeGroups will ensure as auto scaling so that if one of the created node is deleted/terminated, it will ensure to create another node to balance with desiredCapacity: 3
   - name: expense
     desiredCapacity: 3
     instanceType: m5.large
     spot: true
+
+
