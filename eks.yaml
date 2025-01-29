@@ -8,5 +8,6 @@ managedNodeGroups:  #this managedNodeGroups will ensure as auto scaling so that 
     desiredCapacity: 3
     instanceType: m5.large
     spot: true
+    
 
 
